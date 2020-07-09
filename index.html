@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 bg-dark text-center text-light  ">
+                <div class="what">
+                    Weather Dashboard
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 border border-primary" id="form-element">
+                <div>
+                    <h3>Search for a City:</h3>
+                    <form>
+                        <input type="text" name="search" id="search" placeholder="search"><button><span class="oi oi-magnifying-glass"></span></button></form>
+                </div>
+                <div id="cities"></div>
+            </div>
+            <div class="col-8 border border-light">
+                <div id="city-weather"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 offset-3" id="append-five">
+            </div>
+        </div>
+        <div class="row" id="five-day-forecast">
+        </div>
+        <script type="text/javascript" src="./assets/script.js"></script>
+    </div>
+</body>
+
+</html>
